@@ -11,7 +11,7 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Main />
       </Router>
     </div>
