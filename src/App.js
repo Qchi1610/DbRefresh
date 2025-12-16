@@ -1,7 +1,7 @@
 import ReactGA from "react-ga";
 import React from "react";
 import Main from "./navigation/Main.js";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 import "./App.css";
 
@@ -11,7 +11,7 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 function App() {
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Main />
       </Router>
     </div>
