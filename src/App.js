@@ -1,19 +1,15 @@
 import ReactGA from "react-ga";
 import React from "react";
-import Main from "./navigation/Main.js";
-import { HashRouter as Router } from "react-router-dom";
-
+import Main from "./navigation/Main";
 import "./App.css";
 
 ReactGA.initialize("UA-141023410-2");
-ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.pageview("/");
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Main />
-      </Router>
+      <Main />
     </div>
   );
 }

@@ -2,7 +2,7 @@
   "name": "keep-it-fresh-react",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://qchi1610.github.io/DbRefresh",
+  "homepage": ".",
   "dependencies": {
     "@tableau/tableau-ui": "^2.2.1",
     "react": "^17.0.2",
